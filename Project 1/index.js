@@ -1,15 +1,14 @@
 require('dotenv').config();
-const { Kafka, Partitioners, logLevel, CompressionTypes } = require('kafkajs');
+const { Kafka, Partitioners, CompressionTypes } = require('kafkajs');
 
 const kafka = new Kafka({
-  brokers: [process.env.HOSTNAME],
+  brokers: [process.env.KAFKA_HOSTNAME],
   sasl: {
     mechanism: 'scram-sha-256',
-    username: process.env.USERNAME,
-    password: process.env.PASSWORD,
+    username: process.env.KAFKA_USERNAME,
+    password: process.env.KAFKA_PASSWORD,
   },
   ssl: true,
-  //logLevel: logLevel.ERROR,
 });
 
 const producer = kafka.producer({
