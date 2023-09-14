@@ -5,3 +5,4 @@
 - 2 - Kafka example (JS)
 - 3 - Kafka and Express example (JS)
 - 4 - Kafka and Express example (JS)
+- 5 - Kafka example with different partitions (JS)
