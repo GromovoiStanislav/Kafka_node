@@ -6,3 +6,4 @@
 - 3 - Kafka and Express example (JS)
 - 4 - Kafka and Express example (JS)
 - 5 - Kafka example with different partitions (JS)
+- 6 - Express app with Kafka microservice example (JS)
