@@ -42,6 +42,7 @@ const run = async () => {
   await consumer.subscribe({ topic: 'notifications', fromBeginning: true });
 
   await consumer.run({
+    autoCommit: false,
     eachMessage: async ({ topic, partition, message }) => {
       console.log('consumed: %s', message.value.toString());
 
@@ -52,8 +53,14 @@ const run = async () => {
           ws.send(value.message);
         }
       });
+
+      await consumer.commitOffsets([
+				{ topic, partition, offset: (Number(message.offset) + 1).toString() },
+			]);
     },
   });
 };
 
 run().catch(console.error);
+
+
