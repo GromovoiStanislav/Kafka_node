@@ -11,3 +11,4 @@
 - 7 - Example of notifications with Kafka and WS with JWT (JS)
 - 8 - Kafka with NodeJS for beginners (JS)
 - 9 - Kafka simple example + admin topic (JS)
+- 10 - Kafka simple example + admin topic (JS)

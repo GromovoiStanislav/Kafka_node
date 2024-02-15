@@ -1,5 +1,5 @@
-import 'dotenv/config';
-import { Kafka } from 'kafkajs';
+require('dotenv').config();
+const { Kafka } = require('kafkajs');
 
 const run = async () => {
   try {
@@ -19,7 +19,7 @@ const run = async () => {
     const result = await admin.createTopics({
       topics: [
         {
-          topic: 'test-topic',
+          topic: 'supplier-ratings',
         },
       ],
     });
