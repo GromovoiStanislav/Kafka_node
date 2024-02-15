@@ -34,19 +34,6 @@ async function produce() {
 
   console.log(`Send Successfully! ${JSON.stringify(result)}`);
   await producer.disconnect();
-
-  // const producedData = await producer.send({
-  //   topic: 'my-topic',
-  //   messages: [
-  //     {
-  //       value: players[jerseyNumber],
-  //       partition: jerseyNumber <= 10 ? 0 : 1,
-  //     },
-  //   ],
-  // });
-  // console.log(`Produced data ${JSON.stringify(producedData)}`);
-
-  //setTimeout(producer.disconnect, 500);
 }
 
 produce();
