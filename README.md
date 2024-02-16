@@ -12,3 +12,4 @@
 - 8 - Kafka with NodeJS for beginners (JS)
 - 9 - Kafka simple example + admin topic (JS)
 - 10 - Kafka simple example + admin topic (JS)
+- 11 - Kafka with ExpressJS example (TS)
