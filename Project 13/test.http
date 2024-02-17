@@ -1,0 +1,9 @@
+
+###
+POST http://localhost:3000/kafka/send
+Content-Type: application/json
+
+{
+    "value": "Hello Nest!!!"
+}
+
