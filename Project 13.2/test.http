@@ -1,0 +1,8 @@
+
+###
+POST http://localhost:3000/hello/send
+Content-Type: application/json
+
+{
+    "value": "Hello Nest!!!"
+}
