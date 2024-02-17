@@ -14,13 +14,7 @@ const kafka = new Kafka({
   ssl: true,
 });
 
-// Producer
-const producer = kafka.producer({
-  createPartitioner: Partitioners.LegacyPartitioner, // DefaultPartitioner LegacyPartitioner
-});
-
-const run = async () => {
-  // Consumer
+const consumerSetup = async (consumerId) => {
   const consumer = kafka.consumer({ groupId: 'test-group' });
   await consumer.connect();
   await consumer.subscribe({ topic: TOPIC, fromBeginning: true });
@@ -28,12 +22,24 @@ const run = async () => {
   await consumer.run({
     eachMessage: async ({ topic, partition, message }) => {
       console.log({
+        consumerId,
         value: message.value.toString(),
         topic: topic,
         partition: partition,
       });
     },
   });
+};
+
+for (let i = 1; i < 4; i++) {
+  consumerSetup(i);
+}
+
+const producerRun = async () => {
+  const producer = kafka.producer({
+    createPartitioner: Partitioners.LegacyPartitioner, // DefaultPartitioner LegacyPartitioner
+  });
+
   await producer.connect();
   await producer.send({
     topic: TOPIC,
@@ -82,6 +88,4 @@ const run = async () => {
   });
 };
 
-run().catch(() => {
-  console.log('Got error in setup consumer');
-});
+setTimeout(producerRun, 10 * 1000);
