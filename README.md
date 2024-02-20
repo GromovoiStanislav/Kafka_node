@@ -17,3 +17,4 @@
 - 13.1 - Kafka implementation in NestJS example
 - 13.2 - Kafka implementation in NestJS example
 - 14 - Kafka implementation in NestJS example
+- 16 - Kafka implementation in NestJS example
