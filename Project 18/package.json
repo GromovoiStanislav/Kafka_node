@@ -1,0 +1,16 @@
+{
+  "name": "kafka",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "admin": "node --env-file=.env admin",
+    "consumer": "node --env-file=.env consumer",
+    "producer": "node --env-file=.env producer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}

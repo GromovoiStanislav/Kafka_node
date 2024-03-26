@@ -21,3 +21,4 @@
 - 15.2 - Kafka implementation in NestJS example
 - 16 - Kafka implementation in NestJS example
 - 17 - Kafka simple example + admin topic (JS)
+- 18 - Kafka official example (JS)
