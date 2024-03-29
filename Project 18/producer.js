@@ -1,5 +1,4 @@
 const { Kafka, CompressionTypes, logLevel } = require('kafkajs');
-const fs = require('node:fs');
 const PrettyConsoleLogger = require('./prettyConsoleLogger');
 
 const kafka = new Kafka({
