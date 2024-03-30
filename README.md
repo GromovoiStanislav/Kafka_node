@@ -14,12 +14,13 @@
 - 10 - Kafka simple example + admin topic (JS)
 - 11 - Kafka with ExpressJS example (TS)
 - 12 - Kafka with Express simple examples + admin topic (JS)
-- 13.1 - Kafka implementation in NestJS example
-- 13.2 - Kafka implementation in NestJS example
-- 14 - Kafka implementation in NestJS example
-- 15.1 - Kafka implementation in NestJS example
-- 15.2 - Kafka implementation in NestJS example
-- 16 - Kafka implementation in NestJS example
+- 13.1 - Kafka implementation in NestJS example (TS)
+- 13.2 - Kafka implementation in NestJS example(TS)
+- 14 - Kafka implementation in NestJS example (TS)
+- 15.1 - Kafka implementation in NestJS example (TS)
+- 15.2 - Kafka implementation in NestJS example (TS)
+- 16 - Kafka implementation in NestJS example (TS)
 - 17 - Kafka simple example + admin topic (JS)
 - 18 - Kafka official example (JS)
 - 19 - Express app with Kafka microservice example (JS)
+- 20 - Kafka with WS example (TS)
