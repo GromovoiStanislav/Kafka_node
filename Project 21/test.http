@@ -1,0 +1,14 @@
+
+###
+POST  http://localhost:3000/connection
+Content-Type: application/json
+
+{
+    "type": "NEW_CONNECTION",
+    "passportNumber":"12345"
+}
+
+
+
+###
+GET  http://localhost:3000/connection/12345?activationId=4e236344-76ad-4651-8e07-b8bcb39d549f
