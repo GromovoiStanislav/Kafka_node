@@ -25,3 +25,4 @@
 - 19 - Express app with Kafka microservice example (JS)
 - 20 - Kafka with WS example (TS)
 - 21 - SAGA pattern microservice example (TS)\*
+- 22 - Simplifying Kafka Testing with Jest (JS)
