@@ -1,0 +1,20 @@
+@api=http://localhost:3000
+
+###
+POST {{api}}/topic/TRAIN_MVT_ALL_TOC
+Content-Type: application/json
+
+{
+    "msg_type": "0001",
+    "train_id": "12345"
+}
+
+###
+POST {{api}}/topic/TRAIN_MVT_ALL_TOC
+Content-Type: application/json
+
+{
+    "msg_type": "0002",
+    "train_id": "12345"
+}
+

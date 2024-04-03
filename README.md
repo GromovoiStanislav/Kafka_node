@@ -26,3 +26,4 @@
 - 20 - Kafka with WS example (TS)
 - 21 - SAGA pattern microservice example (TS)\*
 - 22 - Simplifying Kafka Testing with Jest (JS)
+- 23 - Real-time Data Processing with Express, Kafka and MySQL (JS)
