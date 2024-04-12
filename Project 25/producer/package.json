@@ -1,0 +1,14 @@
+{
+  "name": "kafka",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node --env-file=.env producer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
