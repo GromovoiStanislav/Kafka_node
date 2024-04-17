@@ -29,3 +29,4 @@
 - 23 - Real-time Data Processing with Express, Kafka and MySQL (JS)
 - 24 - Kafka implementation in NestJS example (TS)
 - 25 - NestJS notification service with Kafka and Prisma
+- 26 - Kafka simple example (JS)
